@@ -1,8 +1,8 @@
 {
-	"name": "phpforge/menu",
-	"description": "Forge application menus",
+	"name": "phpforge/uuid",
+	"description": "Forge UUID",
 	"autoload": {
-		"psr-0": {"Forge\\Application\\Menu": "src/"}
+		"psr-0": {"Forge\\Uuid": "src/"}
 	},
 	"require": {
 

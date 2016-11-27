@@ -1,6 +1,6 @@
 <?php
 
-namespace Forge\Application;
+namespace Forge;
 
 /**
  * UUID class
@@ -22,7 +22,7 @@ class Uuid {
 
 	/**
 	 * Generate v4 UUID
-	 * 
+	 *
 	 * Version 4 UUIDs are pseudo-random.
 	 */
 	public static function v4() {
@@ -45,15 +45,15 @@ class Uuid {
 
 	/**
 	 * Generate v5 UUID
-	 * 
-	 * Version 5 UUIDs are named based. They require a namespace (another 
-	 * valid UUID) and a value (the name). Given the same namespace and 
+	 *
+	 * Version 5 UUIDs are named based. They require a namespace (another
+	 * valid UUID) and a value (the name). Given the same namespace and
 	 * name, the output is always the same.
-	 * 
+	 *
 	 * @param	uuid	$namespace
 	 * @param	string	$name
 	 */
-	public static function v5($namespace, $name) 
+	public static function v5($namespace, $name)
 	{
 		if (!self::is_valid($namespace)) {
 			return false;

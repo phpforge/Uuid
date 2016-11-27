@@ -1,0 +1,10 @@
+{
+	"name": "phpforge/menu",
+	"description": "Forge application menus",
+	"autoload": {
+		"psr-0": {"Forge\\Application\\Menu": "src/"}
+	},
+	"require": {
+
+	}
+}
